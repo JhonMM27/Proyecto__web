@@ -1,0 +1,330 @@
+    /* ----- GOOGLE FONTS ----- */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@400;500;600;700&family=Titan+One&display=swap');
+    /* ----- VARIABLES CSS ----- */
+        :root{
+            --header-height: 3.5rem;
+
+        /* ==== Colors ==== */
+
+        /* Color mode hsl(hue,saturacion,brillo) */
+        --primary-color: hsl(359,100%,35%);
+        --primary-color-alt: hsl(359, 100%, 25%);
+        --titulo-color: hsl(19, 16%, 15%);
+        --text-color: hsl(19, 16%, 35%);
+        --text-color-light: hsl(19, 8%, 55%);
+        --body-color: hsl(36, 5%, 87%);
+        --contenedor-color: hsl(19, 10%, 97%);
+    
+        /*========== Font and typography ==========*/
+        /*.5rem == 8px | 1rem = 16px */
+        --body-font: "Poppins", sans-serif;
+        --titulo-font: "Titan One", cursive;
+        --subTitulo-font: "Dancing Script", cursive;
+    
+        --font-2xl: 2.5rem;
+        --font-xl: 2rem;
+        --font-lg: 1.25rem;
+        --font-md: 1rem;
+        --font-sm: 0.938rem;
+        --font-xm: 0.813rem;
+    
+        /*========== Font weight ==========*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+    }
+
+    @media screen and (min-width: 1024px){
+        :root{
+            --font-2xl: 5rem;
+            --font-xl: 3rem;
+            --font-lg: 1.5rem;
+            --font-md: 1.25rem;
+            --font-sm: 1rem;
+            --font-xm: 0.875rem;
+        }
+    }
+    /* ----- BASE ----- */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        font-family: var(--body-font);
+        font-size: var(--font-sm);
+        background-color: var(--body-color);
+        color: var(--text-color);
+        transition: background 0.4s;
+    }
+    h1, h2, h3{
+        color: var(--titulo-color);
+        font-weight: var(--font-medium);
+    }
+    
+    
+    a{
+        text-decoration: none;
+    }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }     
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        z-index: 100;
+        transition: box-shadow 0.3s, background 0.4s;
+    }
+    .header .autor__subTitulo{
+        font-family: var(--titulo-font);
+        text-align: center;
+        font-size: var(--font-xl);
+    }
+
+
+.contenedor{
+    max-width: 1024px;
+    margin-inline: 1.5rem ;
+}
+
+@media screen and (max-width: 340px) {
+    .contenedor{
+        margin-inline: 1rem;
+    }
+}
+@media screen and (min-width: 1064px) {
+    .contenedor{
+        margin-inline: auto;
+    }
+}
+
+.grid{
+    display: grid;
+    gap: 1.5 rem;
+}
+
+.seccion{
+    padding-block: 5rem 1rem;
+}
+
+@media screen and (max-width: 340px) {
+    .seccion {
+        padding-block: 4rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .seccion {
+        padding-block: 7rem 1.5rem;
+    }
+}
+
+
+.autor__nombre{
+    font-family: var(--titulo-font);
+    font-size: var(--font-xl);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: hsl(36,100%,96%);
+    stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #401c10;
+    stroke: #401c10;
+    text-shadow: 6px 6px 0px #9f7060;;
+}
+
+@media screen and (max-width: 340px) {
+    .autor__titulo,
+    .seccion__titulo {
+        font-size: 2rem;
+    }
+}
+.seccion__subTitulo{
+    display: block;
+    font-family: var(--subTitulo-font);
+    font-size: var(--font-lg);
+    font-weight: var(--font-semi-bold);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .seccion__subTitulo{
+        margin-bottom: 0.7rem;
+    }
+}
+
+.seccion__titulo,
+.seccion__subTitulo{
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .seccion__titulo,
+    .seccion__subTitulo{
+    text-align: initial;
+}
+    
+}
+
+.main{
+    overflow: hidden;
+}
+
+
+.autor {
+    position: relative;
+}
+
+.autor__contenedor {
+    row-gap: 3rem;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* comon @edia */
+@media screen and (min-width: 576px) {
+    .autor__contenedor {
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .autor__contenedor {
+        position: relative;
+        grid-template-columns: 480px 500px;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+    }
+}
+
+
+.autor__img {
+    width: 250px;
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .autor__img {
+        width: 400px;
+        position: initial;
+        top: 2rem;
+        right: -2rem;
+    }
+}
+
+.autor__data{
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .autor__data {
+        text-align: initial;
+        order: -1;
+    }
+}
+
+.autor__titulo {
+    font-size: var(--font-2xl);
+    margin-bottom: 1rem;
+}
+
+.autor__descripcion {
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+}
+/* --------------------------------------------------------------------- */
+
+
+
+
+.autor-2{
+    position: relative;
+}
+
+.autor-2__contenedor {
+    row-gap: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .autor-2__contenedor {
+        grid-template-columns: 450px 360px;
+        align-items: center;
+        column-gap: 7rem;
+    }
+}
+
+.autor-2__data {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .autor-2__data{
+        order: 1;
+        text-align: initial;
+    }
+}
+
+.autor-2__img{
+    width: 250px;
+    justify-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .autor-2__img{
+        width: 400px;
+    }
+}
+.footer {
+    margin: 0.5rem;
+    position: relative;
+}
+.footer__contenido {
+    text-align: center;
+    font-size: var(--font-sm);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

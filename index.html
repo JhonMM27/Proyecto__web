@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/logo-nuevo.png" type="image/x-icon">
     <!-- Font Awase  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
@@ -14,11 +14,13 @@
     <title>Ok Pizza</title>
 </head>
 <body>
+
+
     <!-- ------Header------- -->
     <header class="header" id="header">
         <nav class="nav contenedor">
             <a href="#" class="nav__logo">
-                <img src="/img/Logo.png" alt="Imagen del Logo">
+                <img src="/img/logo-nuevo.png" alt="Imagen del Logo">
                 Ok Pizza
             </a>
                 
@@ -45,31 +47,39 @@
                 </div>
             </div>
         </nav>      
-
-
     </header>
+
     <!-- -------MAIN------- -->
     <main class="main">
-        <!-- -----HOME---- -->
-        <section class="home seccion" id="home">
 
+        <section class="home seccion" id="home">
             <div class="home__contenedor contenedor grid">
-                <img src="/img/home_pizza.png" alt="Home img" class="home__img">
+                <div class="home__carousel">
+                    <img src="img/home_pizza.png" alt="Pizza 1" class="home__img active">
+                    <img src="img/home_pizza_2.png" alt="Pizza 2" class="home__img">
+                    <img src="img/home_pizza_3.png" alt="Pizza 3" class="home__img">
+                    <img src="img/home_pizza_4.png" alt="Pizza 3" class="home__img">
+                    <img src="img/home_pizza_5.png" alt="Pizza 3" class="home__img">
+                </div>
                 <div class="home__data">
                     <h1 class="home__titulo">
-                        La Mejor <br>
-                        Pizza.<br>
+                        Las Mejores <br>
+                        Pizzas.<br>
                         De CIX                        
                     </h1>
                     <p class="home__descripcion">
-                        Descripcion breve
+                        En OK Pizza la pizza es más que comida: es compartir momentos especiales. Ofrecemos pizzas irresistibles, hechas con ingredientes frescos, recetas artesanales y un toque de pasión en cada bocado. ¡Perfectas para disfrutar y crear recuerdos únicos!
                     </p>
                     <a href="#" class="button">
-                        Nueva Orden <i class="fa-solid fa-arrow-right"></i>
+                        Ordenar <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
-            </div>            
+            </div>
         </section>
+        
+        
+
+
 
         <!-- -----acerca-de(ACERCA DE)----- -->                
         <section class="acerca-de seccion" id="acerca-de">
@@ -88,13 +98,15 @@
                     </h2>
 
                     <p class="acerca-de__descripcion">
-                        parrafo de descipcion
+                        En OK Pizza nos dedicamos a crear pizzas deliciosas con ingredientes frescos y recetas artesanales. Nuestro compromiso es ofrecer calidad, sabor y momentos especiales en cada pedido.
                     </p>
                 </div>
 
-                <img src="/img/Home-pizza-2.png" alt="Imagen de Acercas de " class="acerca-de__img">
+                <img src="/img/acerca-de-pizza.png" alt="Imagen de Acercas de " class="acerca-de__img">
             </div>
         </section>
+
+
 
         <!-- -----POPULAR----- -->
         <section class="popular seccion" id="popular">
@@ -117,13 +129,10 @@
                             Una pizza clásica con salsa de tomate, mozzarella fresca y albahaca.
                         </p>
 
-                        <p class="popular__precio">$24.99</p>
+                        <p class="popular__precio">S/44.99</p>
 
                     </div>
                 </div>
-
-
-
 
 
                 <div class="popular__card">
@@ -141,34 +150,14 @@
                             Una pizza tradicional cubierta con salsa de tomate, queso mozzarella y pepperoni.
                         </p>
 
-                        <p class="popular__precio">$29.99</p>
+                        <p class="popular__precio">S/49.99</p>
 
                     </div>                    
                 </div>
 
-                <!-- <div class="popular__card">
-
-                    <img src="/img/popular-pizza-carnivora.png" alt="Popular pizza amantes de la carne" class="popular__img">
-
-                    <div class="popular__contenido">
-                        
-                        <a href="" class="popular__button">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </a>
-
-                        <h3 class="popular__name">Amantes de la Carne</h3>
-
-                        <p class="popular__descripcion">
-                            Una pizza abundante cubierta con salsa de tomate, queso mozzarella, pepperoni y carne.
-                        </p>
-
-                        <p class="popular__precio">$34.99</p>
-
-                    </div>
-                </div> -->
 
                 <div class="popular__card">
-                    <img src="/img/popular-pizza-hawaina.png" alt="popular pizza pepperoni" class="popular__img">
+                    <img src="/img/popular-pizza-hawaina.png" alt="popular pizza Hawaina" class="popular__img">
 
                     <div class="popular__contenido">
                         
@@ -182,14 +171,77 @@
                             Una pizza tradicional cubierta con salsa de tomate, queso mozzarella, pepperoni y piña.
                         </p>
 
-                        <p class="popular__precio">$29.99</p>
+                        <p class="popular__precio">S/44.99</p>
 
                     </div>                    
                 </div>
 
-            </div>
 
+                <div class="popular__card">
+                    <img src="/img/popular-pizza-cuatro-quesos.png" alt="popular pizza cuatro quesos" class="popular__img">
+
+                    <div class="popular__contenido">
+                        
+                        <a href="" class="popular__button">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <h3 class="popular__name">Cuatro Quesos</h3>
+
+                        <p class="popular__descripcion">
+                            Una pizza tradicional cubierta con salsa de tomate, queso mozzarella, el queso gorgonzola, el queso parmesano y el queso fontina.
+                        </p>
+
+                        <p class="popular__precio">S/49.99</p>
+
+                    </div>                    
+                </div>
+
+
+                <div class="popular__card">
+                    <img src="/img/popular-pizza-chanpiñones.png" alt="popular pizza con chanpiñones" class="popular__img">
+
+                    <div class="popular__contenido">
+                        
+                        <a href="" class="popular__button">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <h3 class="popular__name">Con Chanpiñones</h3>
+
+                        <p class="popular__descripcion">
+                            Una pizza tradicional cubierta con salsa de tomate, queso mozzarella y como indica el nombre lleva chanpiñones.
+                        </p>
+
+                        <p class="popular__precio">S/49.99</p>
+
+                    </div>                    
+                </div>
+
+
+                <div class="popular__card">
+                    <img src="/img/popular-pizza-americana.png" alt="popular pizza con americana" class="popular__img">
+
+                    <div class="popular__contenido">
+                        
+                        <a href="" class="popular__button">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <h3 class="popular__name">Ameriacna</h3>
+
+                        <p class="popular__descripcion">
+                            Una pizza tradicional cubierta con salsa de tomate, queso mozzarella y Salchicha.
+                        </p>
+
+                        <p class="popular__precio">S/49.99</p>
+
+                    </div>                    
+                </div>
+            </div>           
         </section>
+
+
         <!-- ----recientemente---- -->
         <section class="recientemente seccion" id="recientemente">
 
@@ -200,14 +252,17 @@
                     <h2 class="seccion__titulo">
                         Pizza <br>
                         para <br>
-                        Carnivoros
+                        Carnívoros
 
                     </h2>
 
-                    <p class="recientemente___descripcion">Descripcion de agragado Recientemente</p>
+                    <p class="recientemente___descripcion">
+                        Disfruta de nuestra Pizza para Carnívoros, recién agregada al menú. Una deliciosa combinación de salsa de tomate, queso derretido y abundante carne, perfecta para los amantes de los sabores intensos. ¡Pruébala y satisface tu lado más carnívoro!
+                        
+                    </p>
 
                     <a href="" class="button">
-                        Nueva Orden <i class="fa-solid fa-arrow-right"></i>
+                        Ordenar <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
                 </div>
@@ -215,15 +270,16 @@
             </div>            
         </section>
 
-        <!-- -----NEWSLETTER---- Hoja Informativa -->
+
+
+        <!--- Hoja Informativa -->
         <section class="hoja-informativa seccion">
             <div class="hoja-informativa__contenedor contenedor grid">
 
                 <img src="/img/Pedaso-Pizza.png" alt="Pedaso Pizza" class="hoja-informativa__img">
 
                 <div class="hoja-informativa__data">
-                    <!-- se pone un bustitlo buscar uno -->
-                    <span class="seccion__subTitulo">Contactos</span> 
+                    <span class="seccion__subTitulo">¡No te pierdas nuestras ofertas! 📨</span> 
 
                     <h2 class="seccion__titulo">
                         suscríbete para <br>
@@ -235,19 +291,21 @@
                         <button class="button newslleter__button">
                             Suscribete <i class="fa-regular fa-paper-plane"></i>
                         </button>
-                        </form>
+                    </form>
                 </div>
             </div>
         </section>
-        
     </main>
+
+
+
+
     <!-- -----FOOTER---- -->
     <footer class="footer">
         <div class="footer__contenedor contenedor grid">
-
             <div>
                 <a href="" class="footer__logo">
-                    <img src="/img/Logo.png" alt="Imagen del Logo">
+                    <img src="/img/logo-nuevo.png" alt="Imagen del Logo">
                     OkPizza
                 </a>
 
@@ -257,41 +315,37 @@
                     para el alma.
                 </p>
             </div>
-            <div class="footer__contenido">
-                
-                <div>
-                    <h3 class="footer__titulo">Menu Principal</h3>
-                    <ul class="footer__links">
-                        <li><a href="" class="footer__link">Inicio</a></li>
-                        <li><a href="" class="footer__link">Acerca de</a></li>
-                        <li><a href="" class="footer__link">Popular</a></li>
-                        <li><a href="" class="footer__link">Recientemente</a></li>
-                    </ul>
-                </div>
+                <div class="footer__contenido">
+                    
+                    <div>
+                        <h3 class="footer__titulo">Menu Principal</h3>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link">Inicio</a></li>
+                            <li><a href="#acerca-de" class="footer__link">Acerca de</a></li>
+                            <li><a href="#popular" class="footer__link">Popular</a></li>
+                            <li><a href="#recientemente" class="footer__link">Recientemente</a></li>
+                        </ul>
+                    </div>
 
                 <div>
                     <h3 class="footer__titulo">Información</h3>
                     <ul class="footer__links">
-                        <li><a href="" class="footer__link">Contact</a></li>
-                        <li><a href="" class="footer__link">Order & Return</a></li>
-                        <li><a href="" class="footer__link">Videos</a></li>
-                        <li><a href="" class="footer__link">Reservation</a></li>
+                        <li><a href="https://wa.me/?text=I'm%20inquiring%20about%20the%20apartment%20listing" class="footer__link" target="_blank">Contactos</a></li>
+                        
                     </ul>
                 </div>
 
                 <div>
                     <h3 class="footer__titulo">Dirección</h3>
                     <ul class="footer__links">
-                        <li class="footer__informacion">Address <br>
-                                                        here</li>
+                        <li class="footer__informacion">AV. Sáenz <br>
+                                                        Peña 1227</li>
                         <li class="footer__informacion">9AM - 11PM</li>
                     </ul>
                 </div>
 
                 <div>
                     <h3 class="footer__titulo">Redes Sociales</h3>
-
-
                     <ul class="footer__links footer__social">
                         <a href="https://facebook.com/" class="footer__social-links" target="_blank">
                             <i class="fa-brands fa-facebook"></i>
@@ -305,19 +359,19 @@
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                     </ul>
-
                 </div>
 
             </div>
         </div>
-
+        
         <div class="footer__copy contenedor">
-            &copy;Todos los derechos son reservados
+            &copy;Desarrollado por <a class="autores" href="/autores/autores.html" target="_blank">Alumos uss. </a>Todos los derechos son reservados
         </div>
     </footer>
 
-    <!-- --SCROLL UP -->
 
+
+    <!-- --SCROLL UP -->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
